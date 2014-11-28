@@ -5,11 +5,6 @@ import javax.swing.JOptionPane;
 
 public class main{  
   
-    /** 
-     * @param args 
-     */
-	
-	
     public static void main (String[] args) {  
                 
         int numeros= Integer.parseInt(JOptionPane.showInputDialog("Ingreso Nº " +  " : ",1 ));
@@ -18,7 +13,6 @@ public class main{
         
         Str=Str + "Numero "  + numero.convertirUnidadesDeMilARomano(numeros)+ numero.convertirCentenasARomano(numeros) + numero.convertirDecenasARomano(numeros)+ numero.convertirUnidadesARomano(numeros);  
         JOptionPane.showMessageDialog(null, Str);  
-  
-         
+           
     } 
 }

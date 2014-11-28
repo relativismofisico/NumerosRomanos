@@ -9,25 +9,25 @@ import com.appsEmpresariales.udea.romanos.*;
 
 public class RomanosTest {
 
-//	@Test
+	@Test
 	public void romanoConvertidorUnidadesTodasTest() {
 		Romanos numero= new Romanos();
-		int[] resultado=numero.RomanoConvertidorUnidades(1111);
-		int[] resultadoEsperado= new int []{1,1,0,0};
+		int[] resultado=numero.RomanoConvertidorUnidades(11111);
+		int[] resultadoEsperado= new int []{1,1,1,1};
 		Assert.assertArrayEquals(resultadoEsperado, resultado);
 	}
 	
 	@Test
 	public void convertidorUnidadesDeMilARomano(){
 		Romanos unidad= new Romanos();
-		String unidadRomana = unidad.convertirUnidadesDeMilARomano(1111);
+		String unidadRomana = unidad.convertirUnidadesDeMilARomano(11111);
 		assertEquals("M", unidadRomana);
 	}
 	
 	@Test
 	public void convertidorCentenasARomano(){
 		Romanos centenas= new Romanos();
-		String centenaRomana = centenas.convertirCentenasARomano(1111);
+		String centenaRomana = centenas.convertirCentenasARomano(11111);
 		assertEquals("C", centenaRomana);
 	}
 	
@@ -38,10 +38,5 @@ public class RomanosTest {
 		assertEquals("X", decenaRomana);
 	}
 
-	@Test
-	public void convertidorUnidadesARomano(){
-		Romanos unidades= new Romanos();
-		String unidadesRomana = unidades.convertirUnidadesARomano(1111);
-		assertEquals("I", unidadesRomana);
-	}
+	
 }
